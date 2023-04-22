@@ -24,11 +24,23 @@ public class Main {
             double res;
 
             switch (operation) {
-                case '+' -> res = calculator.addition(numbers);
-                case '-' -> res = calculator.subtraction(numbers);
-                case '*' -> res = calculator.multiplication(numbers);
-                case '/' -> res = calculator.division(numbers);
-                default -> {
+                case '+': {
+                    res = calculator.addition(numbers);
+                    break;
+                }
+                case '-': {
+                    res = calculator.subtraction(numbers);
+                    break;
+                }
+                case '*': {
+                    res = calculator.multiplication(numbers);
+                    break;
+                }
+                case '/': {
+                    res = calculator.division(numbers);
+                    break;
+                }
+                default: {
                     System.out.println("There is no such operation!");
                     return;
                 }
