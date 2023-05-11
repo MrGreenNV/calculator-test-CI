@@ -24,6 +24,9 @@ publishing {
 
     publications {
         maven(MavenPublication) {
+            groupId 'ru.averkievnv'
+            artifactId 'test-ci-cd'
+            version '1.0'
             from components.java
         }
     }
