@@ -9,7 +9,6 @@ public class Calculator {
         if (numbers.length < 2) {
             throw new ArithmeticException("There must be more than two numbers!");
         }
-
         return Arrays.stream(numbers).sum();
     }
 
